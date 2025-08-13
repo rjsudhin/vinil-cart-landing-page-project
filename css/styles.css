@@ -1,0 +1,153 @@
+/* Rubik Font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --page-font: Rubik, sans-serif;
+  --white-color: #eeee;
+  --white-color-choice: #f9f9f9;
+  --black-transparent: #252525c7;
+  --grey-btn: rgb(93, 92, 92);
+  --red-btn: rgb(236, 87, 87);
+}
+
+html {
+  font-family: var(--page-font);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* for all container */
+.container {
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+}
+/* for all container */
+
+/* HEADER HEADER HEADER */
+header {
+  padding: 1.5rem 0.5rem;
+}
+
+header .container {
+  height: 100vh;
+  background-image: url('../gallery/pexels-turgay-koca-405356598-15272761.jpg');  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+header .container .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.container .nav-bar .logo {
+  color: var(--white-color-choice);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: clamp(16px, calc(14.182px + 0.568vw), 21px)
+}
+
+.container .nav-bar #menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-bar #menu li {
+  list-style: none;
+  font-size: clamp(16px, calc(15.273px + 0.227vw), 18px);
+}
+
+.nav-bar #menu li a {
+  color: var(--white-color);
+  font-weight: bold;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+header .header-contents {
+  padding: 1rem;
+}
+
+header .header-contents .header-heading {
+  color: var(--white-color-choice);
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(33px, calc(27.182px + 1.818vw), 49px);
+}
+
+header .nav-bar .logo,
+header .nav-bar #menu li,
+header .header-contents .header-heading, 
+header .header-contents .header-description,
+header .header-bottom-controllers .colored-logo {
+  text-shadow: 1px 1px 1px #252525;
+}
+
+header .header-contents .header-description {
+  color: var(--white-color);
+  font-weight: bold;
+  text-align: center;
+  font-size: clamp(16px, calc(14.545px + 0.455vw), 20px);
+}
+
+header .header-bottom-controllers {
+  background-color: var(--black-transparent);
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.header-bottom-controllers .colored-logo {
+  color: var(--white-color-choice);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: clamp(16px, calc(14.545px + 0.455vw), 20px);
+}
+.header-bottom-controllers .side-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.side-links button {
+  width: 95px;
+  padding: .4rem;
+  border: none;
+  border-radius: .5rem;
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.side-links button:nth-child(1) {
+  background-color: var(--grey-btn);
+}
+
+.side-links button:nth-child(2) {
+  background-color: var(--red-btn);
+}
+
+
+/* HEADER HEADER HEADER */
