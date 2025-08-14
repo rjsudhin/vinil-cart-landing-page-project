@@ -15,7 +15,7 @@
   --grey-btn: rgb(93, 92, 92);
   --red-btn: rgb(236, 87, 87);
   --royoal-blue: #7994e5;
-  --doger-blue: #1c446b;
+  --blue-choice-2: #5072a7;
 }
 
 img {
@@ -134,29 +134,50 @@ header .header-bottom-controllers {
   text-transform: uppercase;
   font-size: clamp(16px, calc(14.545px + 0.455vw), 20px);
 }
-.header-bottom-controllers .side-links {
+.header-bottom-controllers .button {
+  width: 110px;
+  height: 40px;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  width: fit-content;
-}
-
-.side-links button {
-  width: 95px;
-  padding: .4rem;
-  border: none;
-  border-radius: .5rem;
-  color: var(--white-color);
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: var(--royoal-blue);
+  border-radius: 30px;
+  color: var(--white-color-choice);
   font-weight: bold;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px 2px #25252533;
+  padding-left: 8px;
+  transition-duration: .5s;
 }
 
-.side-links button:nth-child(1) {
-  background-color: var(--grey-btn);
+.button .svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
 }
 
-.side-links button:nth-child(2) {
-  background-color: var(--red-btn);
+.bell path {
+  fill: #252525;
 }
+
+.button:hover {
+  transition-duration: .5s;
+  background-color: var(--blue-choice-2);
+}
+
+.button:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
 
 
 /* HEADER HEADER HEADER */
@@ -201,6 +222,7 @@ main .hero-container .hero-heading {
   font-weight: bold;
   font-size: clamp(18px, calc(20.545px + 2.600vw), 23px);
 }
+
 main .hero-container .hero-heading,
 main .hero-container .hero-description {
   color: #252525;
@@ -215,52 +237,39 @@ main .hero-container .hero-description::after {
   content: '"'
 }
 
-main .hero-container .hero-descriptions .button {
-  width: 110px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  background-color: var(--royoal-blue);
-  border-radius: 30px;
-  color: var(--white-color-choice);
-  font-weight: bold;
-  border: none;
-  position: relative;
-  cursor: pointer;
-  transition-duration: .2s;
-  box-shadow: 5px 5px 10px 2px #25252533;
-  padding-left: 8px;
-  transition-duration: .5s;
-}
-
-.button .svgIcon {
-  height: 25px;
-  transition-duration: 1.5s;
-}
-
-.bell path {
-  fill: #252525;
-}
-
-.button:hover {
-  background-color: var(--doger-bluef);
-  transition-duration: .5s;
-}
-
-.button:active {
-  transform: scale(0.97);
-  transition-duration: .2s;
-}
-
-.button:hover .svgIcon {
-  transform: rotate(250deg);
-  transition-duration: 1.5s;
-}
-
 
 /* MAIN MAIN MAIN MAIN */
+
+/* gallery section */
+section.gallery-section {
+  min-height: 100vh;
+}
+
+.gallery-section .container {
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.gallery-section img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 2px #25252569;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+/* gallery section */
 
 
 /* Desktop Screen Rule */
