@@ -42,7 +42,7 @@ header {
 
 header .container {
   height: 100vh;
-  background-image: url('../gallery/avocados-3513048_1280.jpg');  
+  background-image: url('../gallery/pexels-turgay-koca-405356598-15314726.jpg');  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,3 +151,20 @@ header .header-bottom-controllers {
 
 
 /* HEADER HEADER HEADER */
+
+
+/* Desktop Screen Rule */
+@media (min-width: 750px) {
+
+}
+/* Desktop Screen Rule */
+
+
+/* Mobile screen rule */
+@media (max-width: 750px) {
+  header .header-contents .header-heading,
+  header .header-contents .header-description {
+    text-align: left;
+  }
+}
+/* Mobile screen rule */
