@@ -74,6 +74,10 @@ header .container .nav-bar {
   font-size: clamp(16px, calc(14.182px + 0.568vw), 21px)
 }
 
+.container .nav-bar .side-controller .fi.fi-br-menu-burger {
+  display: none;
+}
+
 .container .nav-bar #menu {
   display: flex;
   gap: 2rem;
@@ -274,13 +278,47 @@ section.gallery-section {
 
 /* Desktop Screen Rule */
 @media (min-width: 750px) {
-
+  header .container .nav-bar .side-controller #hamburger {
+    display: none;
+  }
 }
 /* Desktop Screen Rule */
 
 
 /* Smaller screen rule */
 @media (max-width: 750px) {
+  header .container .nav-bar .side-controller #menu {
+    display: none;
+  }
+
+  header .container .nav-bar .side-controller {
+    position: relative;
+    display: flex;
+    gap: 1rem
+  }
+
+  header .container .nav-bar .side-controller #menu.active {
+    display: flex;
+    background-color: #252525d0;
+    width: 250px;
+    height: 80vh;
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    transition-duration: .50s;
+    align-items: center;
+    padding: 1rem;
+    justify-content: flex-start;
+  } 
+
+  header .container .nav-bar .side-controller #hamburger{
+    font-weight: bold;
+    display: flex;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
   header .header-contents .header-heading,
   header .header-contents .header-description {
     text-align: left;
